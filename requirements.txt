@@ -1,0 +1,2 @@
+# Test dependency used by the offline validation suite.
+pytest>=8.0,<9.0
