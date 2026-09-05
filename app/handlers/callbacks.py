@@ -36,7 +36,7 @@ class CallbackHandler:
             if data.startswith("help:"):
                 page = int(data.split(":", 1)[1])
                 text, markup = self.help_page(page, language)
-                self._edit(chat_id, message_id, message, text, markup)
+                self.bot.edit_caption(chat_id, message_id, text, markup)
             elif data == "home":
                 self.bot.edit_caption(
                     chat_id,
