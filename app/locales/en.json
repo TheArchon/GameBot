@@ -126,7 +126,7 @@
     },
     "5": {
       "title": "📅 Daily Check-in",
-      "body": "> ▣ /checkin — Check in once a day, build your streak\n\nMiss a day and your streak resets — come back daily!"
+      "body": "[[quote]]▣ /checkin — Check in once a day, build your streak[[/quote]]\n\nMiss a day and your streak resets — come back daily!"
     }
   },
   "results": {
