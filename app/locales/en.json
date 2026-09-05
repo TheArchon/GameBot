@@ -110,22 +110,22 @@
   "help": {
     "1": {
       "title": "▣ Commands",
-      "body": "▣ /start — Wake Kai up\n▣ /help — Open this help center\n▣ /ping — Check response speed\n▣ /resmemory — Clear your chat memory\n▣ /stats — Bot statistics (owner)\n\nJust send a message anytime — Kai’s always listening."
+      "body": "[[quote]]▣ /start — Wake Kai up\n▣ /help — Open this help center\n▣ /ping — Check response speed\n▣ /resmemory — Clear your chat memory\n▣ /stats — Bot statistics (owner)[[/quote]]\n\nJust send a message anytime — Kai’s always listening."
     },
     "2": {
       "title": "✨ Charm Battle Arena",
-      "body": "▣ /flirt — Reply to someone — Kai flirts with them\n▣ /shayari — Reply to someone — Get some shayari\n▣ /steal [amount] — Reply to someone — Try to steal from them\n▣ /send [amount] — Send money to a user (reply or @username)\n▣ /shield — Buy 2h protection for 200 coins\n▣ /wallet — Check balance and total stolen\n▣ /profile — View your profile\n▣ /leaderboard — Charm Top / Richest / Chat Top / Global Chat\n\nNew users start with 500 coins. A 100-coin protection floor applies to steals."
+      "body": "[[quote]]▣ /flirt — Reply to someone — Kai flirts with them\n▣ /shayari — Reply to someone — Get some shayari\n▣ /steal [amount] — Reply to someone — Try to steal from them\n▣ /send [amount] — Send money to a user (reply or @username)\n▣ /shield — Buy 2h protection for 200 coins\n▣ /wallet — Check balance and total stolen\n▣ /profile — View your profile\n▣ /leaderboard — Charm Top / Richest / Chat Top / Global Chat[[/quote]]\n\nNew users start with 500 coins. A 100-coin protection floor applies to steals."
     },
     "3": {
       "title": "🎮 Party Games",
-      "body": "▣ /trust [amount] — Reply to someone — Prisoner’s Dilemma\n▣ /bid [amount] — Bid on Kai’s active auction\n▣ /flip [amount] — Flip a coin for virtual coins\n\nTrust Game: cooperate or betray. Auctions are settled safely after the bidding window."
+      "body": "[[quote]]▣ /trust [amount] — Reply to someone — Prisoner’s Dilemma\n▣ /bid [amount] — Bid on Kai’s active auction\n▣ /flip [amount] — Flip a coin for virtual coins[[/quote]]\n\nTrust Game: cooperate or betray. Auctions are settled safely after the bidding window."
     },
     "4": {
       "title": "🎁 Referrals & Coupons",
-      "body": "▣ /invite — Get your referral link + milestone progress\n▣ /redeem [code] — Redeem a coupon code\n\nRefer friends for big milestone bonuses — check /invite for details."
+      "body": "[[quote]]▣ /invite — Get your referral link + milestone progress\n▣ /redeem [code] — Redeem a coupon code[[/quote]]\n\nRefer friends for big milestone bonuses — check /invite for details."
     },
     "5": {
-      "title": "[[emoji:bullet]]Daily Check-in",
+      "title": "Daily Check-in",
       "body": "[[quote]]▣ /checkin — Check in once a day, build your streak[[/quote]]\n\nMiss a day and your streak resets — come back daily!"
     }
   },

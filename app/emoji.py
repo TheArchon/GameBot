@@ -30,6 +30,11 @@ EMOJI_ENV = {
     "bullet": "EMOJI_BULLET",
 }
 
+for page in range(1, 6):
+    EMOJI_ENV[f"help_title_{page}"] = f"EMOJI_HELP_TITLE_{page}"
+    EMOJI_ENV[f"help_heading_{page}"] = f"EMOJI_HELP_HEADING_{page}"
+    EMOJI_ENV[f"help_bullet_{page}"] = f"EMOJI_HELP_BULLET_{page}"
+
 def tg_emoji(emoji_id: str, fallback: str) -> str:
     """Render a Telegram custom emoji when an ID is configured, else use fallback."""
     emoji_id = str(emoji_id or "").strip()
@@ -61,4 +66,27 @@ def render_message_emojis(text: str) -> str:
         token = f"[[emoji:{key}]]"
         if token in text:
             text = text.replace(token, emoji_for(key, fallback, ids))
+    return text
+
+
+def render_help_page_emojis(text: str, page: int) -> str:
+    """Add page-specific custom emojis to Help Center content."""
+    ids = custom_emoji_ids()
+
+    title_id = ids.get(f"help_title_{page}", "")
+    heading_id = ids.get(f"help_heading_{page}", "")
+    bullet_id = ids.get(f"help_bullet_{page}", "")
+
+    text = text.replace(
+        "[[help_title]]",
+        tg_emoji(title_id, "✨") if title_id else ""
+    )
+    text = text.replace(
+        "[[help_heading]]",
+        tg_emoji(heading_id, "📘") if heading_id else ""
+    )
+
+    if bullet_id:
+        text = text.replace("▣", tg_emoji(bullet_id, "▣"))
+
     return text
