@@ -46,3 +46,24 @@ def _fallback_emoji(text: str) -> str:
     # Keep the existing localized button text as the fallback. Telegram will render
     # the configured custom emoji in front of the label; no locale file is modified.
     return text
+
+def render_message_emojis(text: str) -> str:
+    """Replace message emoji placeholders with Telegram custom emojis."""
+    if not text:
+        return text
+
+    ids = custom_emoji_ids()
+
+    replacements = {
+        "heart": "💝",
+    }
+
+    for key, fallback in replacements.items():
+        token = f"[[emoji:{key}]]"
+        if token in text:
+            text = text.replace(
+                token,
+                emoji_for(key, fallback, ids),
+            )
+
+    return text
