@@ -17,7 +17,7 @@ def _load_dotenv(path: str = ".env") -> None:
         key, value = key.strip(), value.strip()
         if value[:1] in {"'", '"'} and value[-1:] == value[:1]:
             value = value[1:-1]
-        os.environ.setdefault(key, value)
+        os.environ[key] = value
 
 
 @dataclass(frozen=True)
