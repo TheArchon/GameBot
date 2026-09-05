@@ -43,7 +43,7 @@
     "error": "⚠️ Something went wrong while processing that request. Please try again.",
     "ping": "🏓 *Pong!* Bot is online and responding.",
     "memory_cleared": "🧠 Your conversation memory for this chat has been cleared.",
-    "home_short": "*Kai is here. 💝*\n\nUse the buttons below to open the Help Center, support, updates or add Kai to a group.",
+    "home_short": "*GameBot is here. [[emoji:heart]]*\n\nUse the buttons below to open the Help Center, support, updates or add Kai to a group.",
     "start_caption": "*Kai is here. {heart}*\n\nHey, I’m Kai — the friend who actually listens and gets it. Bestfriend comfort, caring partner warmth, and a sharp mind for real talk — all in one place. 🐙\n\n*Vibe:* sweet and respectful, emotional support, real answers.\n*Boundary:* sweet talk is welcome, explicit or unsafe content isn’t.\n\nTap a button below or just send a message 🦖",
     "profile_template": "*Your Profile*\n\n👤 {name}\n🪙 Balance: *{balance:,}*\n🔥 Streak: *{streak}*\n🛡 Shield: *{shield}*\n🌐 Language: *{language}*",
     "wallet_template": "💰 *Wallet*\n\n🪙 Balance: *{balance:,}*\n💸 Total stolen: *{stolen:,}*\n\nCoins are virtual and have no cash value.",
