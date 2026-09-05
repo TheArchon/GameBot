@@ -1,6 +1,7 @@
 from __future__ import annotations
 from .common import target_id
 from app.locales.loader import t
+from app.updater import update_and_validate, restart_process, UpdateError
 
 class AdminHandler:
     def _maintenance(self,cid,uid,args):
