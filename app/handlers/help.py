@@ -17,4 +17,4 @@ class HelpHandler:
     def handle_help(self, chat_id: int, uid: int, page: int = 1) -> None:
         language = self.db.user(uid)["language"]
         text, markup = self.help_page(page, language)
-        self.bot.send_photo(chat_id, self.image_path(), text, markup)
+        self.bot.send_photo(chat_id, self.image_path(), text, markup, parse_mode="HTML")
