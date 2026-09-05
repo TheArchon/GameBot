@@ -61,5 +61,4 @@ def render_message_emojis(text: str) -> str:
         token = f"[[emoji:{key}]]"
         if token in text:
             text = text.replace(token, emoji_for(key, fallback, ids))
-    text = text.replace("▣", emoji_for("bullet", "▣", ids))
     return text
