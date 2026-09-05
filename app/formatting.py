@@ -15,7 +15,7 @@ def md_to_html(text: str) -> str:
     text = _TG_RE.sub(hold, text)
     text = html.escape(text, quote=False)
 
-    text = re.sub(r'(?m)^>\s?(.*)$', r'<blockquote>\1</blockquote>', text)
+    text = re.sub(r'(?m)^>\s?(.*)$', r'<blockquote>\1</blockquote>\n', text)
     text = re.sub(r'`([^`\n]+)`', r'<code>\1</code>', text)
     text = re.sub(r'\*([^*\n]+)\*', r'<b>\1</b>', text)
 
