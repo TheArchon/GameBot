@@ -26,6 +26,7 @@ EMOJI_ENV = {
     "global_chat": "EMOJI_GLOBAL_CHAT",
     "trust": "EMOJI_TRUST",
     "betray": "EMOJI_BETRAY",
+    "heart": "EMOJI_HEART",
 }
 
 def tg_emoji(emoji_id: str, fallback: str) -> str:
