@@ -27,6 +27,7 @@ EMOJI_ENV = {
     "trust": "EMOJI_TRUST",
     "betray": "EMOJI_BETRAY",
     "heart": "EMOJI_HEART",
+    "bullet": "EMOJI_BULLET",
 }
 
 def tg_emoji(emoji_id: str, fallback: str) -> str:
@@ -51,19 +52,14 @@ def render_message_emojis(text: str) -> str:
     """Replace message emoji placeholders with Telegram custom emojis."""
     if not text:
         return text
-
     ids = custom_emoji_ids()
-
     replacements = {
         "heart": "💝",
+        "bullet": "▣",
     }
-
     for key, fallback in replacements.items():
         token = f"[[emoji:{key}]]"
         if token in text:
-            text = text.replace(
-                token,
-                emoji_for(key, fallback, ids),
-            )
-
+            text = text.replace(token, emoji_for(key, fallback, ids))
+    text = text.replace("▣", emoji_for("bullet", "▣", ids))
     return text
